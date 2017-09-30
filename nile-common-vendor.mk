@@ -185,7 +185,6 @@ PRODUCT_PACKAGES += \
     libCB \
     libGPreqcancel \
     libGPreqcancel_svc \
-    libI420colorconvert \
     libOpenCL \
     libQSEEComAPI \
     libRSDriver_adreno \
@@ -240,7 +239,6 @@ PRODUCT_PACKAGES += \
     liblowi_client \
     libmdmdetect \
     libmiscta \
-    libmm-color-convertor \
     libmmosal_proprietary \
     libmmsw_detail_enhancement \
     libmmsw_math \
