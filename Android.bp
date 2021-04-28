@@ -237,13 +237,6 @@ dex_import {
 	product_specific: true,
 }
 
-dex_import {
-	name: "qti-telephony-common",
-	owner: "sony",
-	jars: ["proprietary/product/framework/qti-telephony-common.jar"],
-	product_specific: true,
-}
-
 prebuilt_etc_xml {
 	name: "android.hardware.gnss@2.0-service-qti",
 	owner: "sony",
