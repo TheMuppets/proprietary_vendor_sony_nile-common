@@ -10939,19 +10939,7 @@ cc_library_shared {
 }
 
 cc_library_shared {
-    name: "libhal_dbg",
-    compile_multilib: "32",
-    soc_specific: true,
-}
-
-cc_library_shared {
     name: "libmmcamera_dbg",
-    compile_multilib: "32",
-    soc_specific: true,
-}
-
-cc_library_shared {
-    name: "libmmcamera_interface",
     compile_multilib: "32",
     soc_specific: true,
 }
