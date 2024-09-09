@@ -382,7 +382,11 @@ PRODUCT_PACKAGES += \
     libdpmqmihal \
     libets_fp \
     libets_teeclient_v2 \
+    libkeymasterdeviceutils \
+    libkeymasterprovision \
+    libkeymasterutils \
     liblqe \
+    libqtikeymaster4 \
     libril-qc-hal-qmi \
     libril-qc-ltedirectdisc \
     libril-qc-qmi-1 \

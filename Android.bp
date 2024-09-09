@@ -10186,6 +10186,91 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libkeymasterdeviceutils",
+    owner: "sony",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libkeymasterdeviceutils.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libQSEEComAPI",
+                "liblog",
+                "libcrypto",
+                "libion",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libkeymasterprovision",
+    owner: "sony",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libkeymasterprovision.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcrypto",
+                "libkeymasterdeviceutils",
+                "libkeymasterutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libkeymasterutils",
+    owner: "sony",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libkeymasterutils.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libQSEEComAPI",
+                "liblog",
+                "libcrypto",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "liblqe",
     owner: "sony",
     strip: {
@@ -10205,6 +10290,41 @@ cc_prebuilt_library_shared {
                 "libqmi_common_so",
                 "libqmi_client_helper",
                 "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqtikeymaster4",
+    owner: "sony",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqtikeymaster4.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcrypto",
+                "libhidlbase",
+                "libhidltransport",
+                "libhwbinder",
+                "libutils",
+                "libcutils",
+                "libkeymasterdeviceutils",
+                "libkeymasterutils",
+                "libbase",
+                "android.hardware.keymaster@4.0",
                 "libc++",
                 "libc",
                 "libm",
@@ -14165,12 +14285,6 @@ cc_library_shared {
 
 cc_library_shared {
     name: "libdevice_security_vendor",
-    compile_multilib: "both",
-    soc_specific: true,
-}
-
-cc_library_shared {
-    name: "libkeymasterdeviceutils",
     compile_multilib: "both",
     soc_specific: true,
 }
