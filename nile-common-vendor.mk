@@ -182,25 +182,11 @@ PRODUCT_PACKAGES += \
     lib-rtpcore \
     lib-rtpsl \
     lib-siputility \
-    libAlacSwDec \
-    libApeSwDec \
     libC2D2 \
     libCB \
-    libFlacSwDec \
     libGPreqcancel \
     libGPreqcancel_svc \
     libI420colorconvert \
-    libOmxAacDec \
-    libOmxAlacDec \
-    libOmxAlacDecSw \
-    libOmxAmrDec \
-    libOmxAmrwbplusDec \
-    libOmxApeDec \
-    libOmxApeDecSw \
-    libOmxEvrcDec \
-    libOmxQcelp13Dec \
-    libOmxVpp \
-    libOmxWmaDec \
     libOpenCL \
     libQSEEComAPI \
     libRSDriver_adreno \
@@ -363,8 +349,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@2.1_vendor \
     vendor.semc.system.idd@1.0 \
     vendor.somc.hardware.radio@1.0 \
-    libOmxDsdDec \
     libOmxVideoDSMode \
+    libOmxVpp \
     libadm \
     libadpcmdec \
     libadsp_hvx_callback_skel \
