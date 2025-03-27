@@ -212,7 +212,6 @@ PRODUCT_PACKAGES += \
     libmmsw_math \
     libmmsw_opencl \
     libmmsw_platform \
-    libpn553_fw \
     libqtigef \
     librebuffering \
     libsmwrapper \
@@ -295,6 +294,7 @@ PRODUCT_PACKAGES += \
     libperfconfig \
     libperfgluelayer \
     libperipheral_client \
+    libpn553_fw \
     libprotobuf-c-idd \
     libqcmaputils \
     libqcrilFramework \
