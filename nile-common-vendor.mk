@@ -164,7 +164,6 @@ PRODUCT_PACKAGES += \
     libQTapGLES \
     libq3dtools_adreno \
     android.hardware.bluetooth@1.0-impl-qti \
-    android.hardware.gatekeeper@1.0-impl-qti \
     android.hardware.gnss@2.0-impl-qti \
     sound_trigger.primary.sdm660 \
     vendor.qti.gnss@3.0-impl \
@@ -372,6 +371,7 @@ PRODUCT_PACKAGES += \
     com.fingerprints.extension@1.0 \
     com.qualcomm.qti.dpm.api@1.0_vendor \
     fpc_tac \
+    android.hardware.gatekeeper@1.0-impl-qti \
     lib-uceservice \
     libMiscTaWrapper \
     libcne \
