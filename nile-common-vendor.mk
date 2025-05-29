@@ -410,16 +410,14 @@ PRODUCT_PACKAGES += \
     libscveBlobDescriptor_skel \
     libscveT2T_skel \
     libvpp_svc_skel \
-    fm_helium \
     libdiag_system \
-    libfm-hci \
     libqmi_cci_system \
-    vendor.qti.hardware.fm@1.0 \
     com.qualcomm.qti.dpm.api@1.0 \
     com.qualcomm.qti.imscmservice@1.0 \
     com.qualcomm.qti.imscmservice@2.0 \
     com.qualcomm.qti.imscmservice@2.1 \
     com.qualcomm.qti.imscmservice@2.2 \
+    fm_helium \
     lib-imscamera \
     lib-imsvideocodec \
     lib-imsvt \
@@ -429,8 +427,10 @@ PRODUCT_PACKAGES += \
     libdpmfdmgr \
     libdpmframework \
     libdpmtcm \
+    libfm-hci \
     libimscamera_jni \
     libimsmedia_jni \
+    vendor.qti.hardware.fm@1.0 \
     vendor.qti.imsrtpservice@2.0 \
     vendor.qti.imsrtpservice@2.1 \
     CneApp \
