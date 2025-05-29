@@ -156,6 +156,7 @@ PRODUCT_PACKAGES += \
     libGLESv2_adreno \
     libQTapGLES \
     libq3dtools_adreno \
+    vulkan.sdm660 \
     libC2D2 \
     libCB \
     libOpenCL \
@@ -190,7 +191,6 @@ PRODUCT_PACKAGES += \
     libwvhidl \
     libwvtee \
     sound_trigger.primary.sdm660 \
-    vulkan.sdm660 \
     libOmxVideoDSMode \
     libOmxVpp \
     libacdb-fts \

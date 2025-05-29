@@ -284,6 +284,58 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vulkan.sdm660",
+    owner: "sony",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/vulkan.sdm660.so",
+            ],
+            shared_libs: [
+                "libadreno_utils",
+                "libgsl",
+                "libz",
+                "liblog",
+                "libllvm-glnext",
+                "libcutils",
+                "libhardware",
+                "libnativewindow",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/vulkan.sdm660.so",
+            ],
+            shared_libs: [
+                "libadreno_utils",
+                "libgsl",
+                "libz",
+                "liblog",
+                "libllvm-glnext",
+                "libcutils",
+                "libhardware",
+                "libnativewindow",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libC2D2",
     owner: "sony",
     strip: {
@@ -1687,39 +1739,6 @@ cc_prebuilt_library_shared {
                 "libaudioroute",
                 "libexpat",
                 "libhardware_legacy",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vulkan.sdm660",
-    owner: "sony",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/vulkan.sdm660.so",
-            ],
-            shared_libs: [
-                "libadreno_utils",
-                "libgsl",
-                "libz",
-                "liblog",
-                "libllvm-glnext",
-                "libcutils",
-                "libhardware",
-                "libnativewindow",
                 "libc++",
                 "libc",
                 "libm",
