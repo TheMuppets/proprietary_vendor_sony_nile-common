@@ -410,8 +410,6 @@ PRODUCT_PACKAGES += \
     libscveBlobDescriptor_skel \
     libscveT2T_skel \
     libvpp_svc_skel \
-    libdiag_system \
-    libqmi_cci_system \
     com.qualcomm.qti.dpm.api@1.0 \
     com.qualcomm.qti.imscmservice@1.0 \
     com.qualcomm.qti.imscmservice@2.0 \
@@ -423,6 +421,7 @@ PRODUCT_PACKAGES += \
     lib-imsvt \
     lib-imsvtextutils \
     lib-imsvtutils \
+    libdiag_system \
     libdpmctmgr \
     libdpmfdmgr \
     libdpmframework \
@@ -430,6 +429,7 @@ PRODUCT_PACKAGES += \
     libfm-hci \
     libimscamera_jni \
     libimsmedia_jni \
+    libqmi_cci_system \
     vendor.qti.hardware.fm@1.0 \
     vendor.qti.imsrtpservice@2.0 \
     vendor.qti.imsrtpservice@2.1 \
