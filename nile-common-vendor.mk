@@ -156,31 +156,18 @@ PRODUCT_PACKAGES += \
     libGLESv2_adreno \
     libQTapGLES \
     libq3dtools_adreno \
-    sound_trigger.primary.sdm660 \
-    vulkan.sdm660 \
     libC2D2 \
     libCB \
     libOpenCL \
     libQSEEComAPI \
     libRSDriver_adreno \
-    libacdb-fts \
-    libacdbloader \
-    libacdbrtac \
-    libadiertac \
     libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
-    libaudcal \
-    libaudioalsa \
     libbccQTI \
     libc2d30_bltlib \
     libdiag \
     libdsutils \
-    libfastcrc \
-    libfastcvadsp_stub \
-    libfastcvopt \
-    libfastrpc_utf_stub \
-    libgpustats \
     libgsl \
     libhdcprx_module \
     libhdcptx_module \
@@ -188,11 +175,6 @@ PRODUCT_PACKAGES += \
     libllvm-glnext \
     libllvm-qcom \
     libmdmdetect \
-    libmmosal_proprietary \
-    libmmsw_detail_enhancement \
-    libmmsw_math \
-    libmmsw_opencl \
-    libmmsw_platform \
     liboemcrypto \
     libqmi_cci \
     libqmi_client_qmux \
@@ -200,27 +182,45 @@ PRODUCT_PACKAGES += \
     libqmi_encdec \
     libqmiservices \
     libqti-perfd-client \
-    libqtigef \
     librs_adreno \
     librs_adreno_sha1 \
     libsensor1 \
     libstagefright_hdcp \
     libthermalclient \
-    libvpphvx \
-    libvpplibrary \
     libwvhidl \
     libwvtee \
+    sound_trigger.primary.sdm660 \
+    vulkan.sdm660 \
     libOmxVideoDSMode \
     libOmxVpp \
+    libacdb-fts \
+    libacdbloader \
+    libacdbrtac \
+    libadiertac \
     libadm \
     libadpcmdec \
     libadsp_hvx_callback_skel \
     libadsp_hvx_stub \
+    libaudcal \
+    libaudioalsa \
     libdrc \
+    libfastcrc \
+    libfastcvadsp_stub \
+    libfastcvopt \
+    libfastrpc_utf_stub \
+    libgpustats \
+    libmmosal_proprietary \
+    libmmsw_detail_enhancement \
+    libmmsw_math \
+    libmmsw_opencl \
+    libmmsw_platform \
     libpn553_fw \
+    libqtigef \
     librebuffering \
     libsmwrapper \
     libsurround_3mic_proc \
+    libvpphvx \
+    libvpplibrary \
     libvqzip \
     libwfdcommonutils_proprietary \
     libwfdmmservice \
@@ -233,7 +233,6 @@ PRODUCT_PACKAGES += \
     com.fingerprints.extension@1.0 \
     com.qualcomm.qti.ant@1.0 \
     com.qualcomm.qti.dpm.api@1.0_vendor \
-    com.qualcomm.qti.imscmservice@1.0_vendor \
     com.qualcomm.qti.imscmservice@2.0_vendor \
     com.qualcomm.qti.imscmservice@2.1_vendor \
     com.qualcomm.qti.imscmservice@2.2_vendor \
@@ -246,29 +245,21 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@3.0-impl \
     vendor.qti.hardware.fm@1.0-impl \
     vendor.qti.hardware.qteeconnector@1.0-impl \
-    lib-imscmservice \
     lib-imsdpl \
-    lib-imsqimf \
-    lib-imsrcs-v2 \
     lib-imsrcsbaseimpl \
     lib-imsvtcore \
-    lib-imsxml \
     lib-rtpcommon \
     lib-rtpcore \
     lib-rtpsl \
-    lib-siputility \
-    lib-uceservice \
     libGPreqcancel \
     libGPreqcancel_svc \
     libMiscTaWrapper \
     libStDrvInt \
     libbatching \
-    libbt-hidlclient \
     libbtnv \
     libcne \
     libcneapiclient \
     libcneoplookup \
-    libcneqmiutils \
     libconfigdb \
     libdataitems \
     libdisp-aba \
@@ -281,7 +272,6 @@ PRODUCT_PACKAGES += \
     libgdtap \
     libgeofencing \
     libgnss \
-    libgnsspps \
     libgps.utils \
     libhdr_tm \
     libidd \
@@ -308,7 +298,6 @@ PRODUCT_PACKAGES += \
     libperfgluelayer \
     libperipheral_client \
     libprotobuf-c-idd \
-    libqcci_legacy \
     libqcmaputils \
     libqcrilFramework \
     libqdi \
@@ -336,12 +325,10 @@ PRODUCT_PACKAGES += \
     libsdm-diag \
     libsdm-disp-vndapis \
     libsdmextension \
-    libsdsprpc \
     libsecureui \
     libsecureui_svcsock \
     libsensor_reg \
     libsettings \
-    libslimclient \
     libssd \
     libsystem_health_mon \
     libta \
@@ -356,11 +343,8 @@ PRODUCT_PACKAGES += \
     qcrild_librilutils \
     qtibus \
     qtimutex \
-    sensor_calibrate \
     sensors.ssc \
     vendor.display.color@1.0 \
-    vendor.display.color@1.1 \
-    vendor.display.color@1.2 \
     vendor.display.postproc@1.0 \
     vendor.egis.fingerprints.inline_hal.hardware.fingerprint@2.0 \
     vendor.qti.data.factory@2.0 \
