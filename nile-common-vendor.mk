@@ -242,12 +242,18 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@3.0-impl \
     vendor.qti.hardware.fm@1.0-impl \
     vendor.qti.hardware.qteeconnector@1.0-impl \
+    lib-imscmservice \
     lib-imsdpl \
+    lib-imsqimf \
+    lib-imsrcs-v2 \
     lib-imsrcsbaseimpl \
     lib-imsvtcore \
+    lib-imsxml \
     lib-rtpcommon \
     lib-rtpcore \
     lib-rtpsl \
+    lib-siputility \
+    lib-uceservice \
     libGPreqcancel \
     libGPreqcancel_svc \
     libMiscTaWrapper \

@@ -3311,6 +3311,41 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "lib-imscmservice",
+    owner: "sony",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/lib-imscmservice.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libbase",
+                "libutils",
+                "libhwbinder",
+                "libhidlbase",
+                "libhidltransport",
+                "com.qualcomm.qti.imscmservice@2.0_vendor",
+                "lib-imsdpl",
+                "lib-imsqimf",
+                "lib-imsxml",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "lib-imsdpl",
     owner: "sony",
     strip: {
@@ -3331,6 +3366,79 @@ cc_prebuilt_library_shared {
                 "libcrypto",
                 "libssl",
                 "libandroid_net",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "lib-imsqimf",
+    owner: "sony",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/lib-imsqimf.so",
+            ],
+            shared_libs: [
+                "lib-imsdpl",
+                "lib-imsxml",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "lib-imsrcs-v2",
+    owner: "sony",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/lib-imsrcs-v2.so",
+            ],
+            shared_libs: [
+                "lib-imsdpl",
+                "lib-imsqimf",
+                "lib-imsxml",
+                "lib-siputility",
+                "libqmi_cci",
+                "liblog",
+                "libcutils",
+                "libbase",
+                "libutils",
+                "libhardware_legacy",
+                "libhardware",
+                "libhwbinder",
+                "libhidlbase",
+                "libhidltransport",
+                "libqmiservices",
+                "libqti_vndfwk_detect",
+                "com.qualcomm.qti.imscmservice@2.0_vendor",
+                "com.qualcomm.qti.uceservice@2.0",
+                "com.qualcomm.qti.uceservice@2.1",
+                "com.qualcomm.qti.imscmservice@2.1_vendor",
+                "com.qualcomm.qti.imscmservice@2.2_vendor",
+                "vendor.qti.ims.callinfo@1.0",
                 "libc++",
                 "libc",
                 "libm",
@@ -3408,6 +3516,33 @@ cc_prebuilt_library_shared {
                 "libdiag",
                 "libcutils",
                 "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "lib-imsxml",
+    owner: "sony",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/lib-imsxml.so",
+            ],
+            shared_libs: [
+                "lib-imsdpl",
+                "libcutils",
                 "liblog",
                 "libc++",
                 "libc",
@@ -3501,6 +3636,73 @@ cc_prebuilt_library_shared {
                 "lib-rtpcommon",
                 "libqti_vndfwk_detect",
                 "libdiag",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "lib-siputility",
+    owner: "sony",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/lib-siputility.so",
+            ],
+            shared_libs: [
+                "lib-imsdpl",
+                "lib-imsxml",
+                "lib-imsqimf",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "lib-uceservice",
+    owner: "sony",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/lib-uceservice.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libbase",
+                "libutils",
+                "libhwbinder",
+                "libhidlbase",
+                "libhidltransport",
+                "lib-imsdpl",
+                "lib-imsqimf",
+                "lib-imsxml",
+                "lib-siputility",
+                "libqti_vndfwk_detect",
+                "lib-imscmservice",
+                "com.qualcomm.qti.imscmservice@2.0_vendor",
+                "com.qualcomm.qti.uceservice@2.0",
                 "libc++",
                 "libc",
                 "libm",
