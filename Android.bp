@@ -10615,6 +10615,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/netmgrd",
             ],
             shared_libs: [
+                "libdsutils_shim",
                 "libdsutils",
                 "libconfigdb",
                 "libdiag",
